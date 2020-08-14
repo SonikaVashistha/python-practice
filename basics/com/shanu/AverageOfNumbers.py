@@ -6,3 +6,4 @@ average = sum/ len(mylist)
 print ("average is", average)
 
 
+

@@ -1,9 +1,13 @@
 print ("**Welcome to the Grocery Shop**")
-bread = 30
-Cake = 50
-Apple = 40
-Butter = 80
-Maggi = 15
-br= int(input("Bread "))
-amount = bread * br
-print ("total amount is", amount)
+items = ("apple","bread","milk","banana","butter")
+price = (100,30,25,50,80)
+qty = (0,0,0,0,0)
+i = 0
+for x in items:
+    qty[i] = int(input("Enter the %s quantity " % x))
+    i = i+1
+i = 0
+for x in items:
+    if(not(qty==0)):
+        print("%s %d kg = Rs. %.2f" %(x, qty(i), qty(i)*price(i)))
+        i = i+1
